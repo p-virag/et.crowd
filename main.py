@@ -1,5 +1,6 @@
 #!/usr/bin/env micropython
-#TODO 103 up; 108 down    check!!!!
+# TODO 103 up; 108 down - check!!!!
+# TODO make ido.txt a config value, not a hardcoded file
 
 try:
     # Imports used directories
@@ -31,8 +32,8 @@ try:
     leftCS.mode = 'COL-REFLECT'
     runCS.mode = 'COL-COLOR'
     kezdo_ido = open("ido.txt", "r+")
-    t1=0.0
-    t2=0.0
+    t1 = 0.0
+    t2 = 0.0
 
     # brake -> stop the motor?
     # block -> let the next command run?
